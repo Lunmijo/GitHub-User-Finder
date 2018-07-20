@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link rel='stylesheet'  type="text/css" href='css/style.css'>
+	<script type="text/javascript" src='js/handler.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/remodal.min.js"></script>
+  <title>GitHub: user finder</title>
+</head>
+<body>
+<div id="wrapper">
+  <form name="search-form">
+    <h1>Find GitHub user</h1>
+    <div id='search-field'>
+      <input type='text' id="name" placeholder="Enter name">
+    </div>
+    <div id='search-button'>
+      <a class="search-button" href="#modal" onClick="getResult();">Do it!</a>
+    </div>
+  </form>
+  <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+ <div class="remodalBorder">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div id="result"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
